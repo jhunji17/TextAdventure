@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 15 root
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "The air here smells of sulfur and ash. Smoke fills the air, searing your
+      lungs. On the walls all\r around you, fire burns up and down like a magical
+      barrier. You take a quick look around\u2014\r through the flames you can see
+      multiple paths ahead, but there\u2019s no way you can make it through the fire
+      blocking your way. A stone pillar in the middle of room has some sort of\r
+      inscription: "
+  - text: " \u201CThroughout these burning halls are pellets of magical fire resistance.
+      Only by\r obtaining enough of these will you be able to pass through beyond
+      the fires of this world. Begin the trial by fire: place your hand on the hot
+      stone.\u201D The smoke is beginning to make you gag; it\r looks like you have
+      no choice."
+  next: {fileID: 11400000, guid: c402f32bfcb9e9746af9ca84c9f8c92b, type: 2}

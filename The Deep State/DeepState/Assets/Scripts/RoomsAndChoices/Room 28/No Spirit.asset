@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: No Spirit
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "The creature is satisfied with its inspection. A priest speaks, \u201CYou
+      are of pure spirit. For\r now. Take this weapon, and feel your ailments pass.
+      May Umbasa help you in the time\r to come.\u201D You feel your spirit enlivened,
+      and your body vigor (all negative effects have\r been removed; you may put
+      on your shoes or do whatever else we said you couldn\u2019t do\r before). \u201CNow,
+      go.\u201D A trapdoor opens beneath you. The world falls away as you\u2019re
+      plunged into black."
+  next: {fileID: 11400000, guid: 37bf2ff90dc0a8f47998c44e7fc4d58b, type: 2}

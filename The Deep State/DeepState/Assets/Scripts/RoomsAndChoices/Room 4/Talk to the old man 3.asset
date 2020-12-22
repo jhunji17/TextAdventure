@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: Talk to the old man 3
+  m_EditorClassIdentifier: 
+  description: 
+  options:
+  - text: "\u201CWhy were you about to kill yourself\u201D"
+    outcome: {fileID: 11400000, guid: b8d4668c45f476e448a4bdd16c36dc69, type: 2}
+  - text: Take the far door.
+    outcome: {fileID: 11400000, guid: 0819f6475fbd07d40929c7b39304a644, type: 2}
+  number: 0

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Zero shoes narration
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "You beat the creature back, sending it skittering back into the dark.
+      To your\r right, a bluish glowing form of a door appears in the wall. To your
+      left, the more\r inconspicuous door still stands."
+  next: {fileID: 11400000, guid: 351786e9c08376f42af108579ac4de28, type: 2}

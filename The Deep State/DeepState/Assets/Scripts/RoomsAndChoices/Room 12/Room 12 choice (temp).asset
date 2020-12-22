@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: Room 12 choice (temp)
+  m_EditorClassIdentifier: 
+  description: 
+  options:
+  - text: Injured and made it to exit.
+    outcome: {fileID: 11400000, guid: f5c8a976119299941b5d5d9dd837008d, type: 2}
+  - text: Not injured and made it to exit.
+    outcome: {fileID: 11400000, guid: 4f38aae4aa4134f4ca1cedd683d69c8b, type: 2}
+  - text: Caught and killed.
+    outcome: {fileID: 11400000, guid: 356d800280a2c5240a5ac9c73211bd63, type: 2}
+  number: 0

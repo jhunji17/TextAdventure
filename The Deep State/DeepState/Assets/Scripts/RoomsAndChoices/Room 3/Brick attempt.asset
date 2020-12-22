@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: Brick attempt
+  m_EditorClassIdentifier: 
+  description: 
+  options:
+  - text: Try to grab the bag.
+    outcome: {fileID: 11400000, guid: 10b418c382ef8e7438305b8daa42d6e6, type: 2}
+  - text: Keep moving.
+    outcome: {fileID: 11400000, guid: fec74458780f11b4cb02528d7dfcb2fa, type: 2}
+  number: 0

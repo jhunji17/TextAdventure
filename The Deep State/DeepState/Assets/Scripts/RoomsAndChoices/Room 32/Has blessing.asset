@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Has blessing
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "You\u2019re surrounded by demons, running towards you. The shrieking pierces
+      your ears\r and you feel your life flash before your eyes. There\u2019s nothing
+      you can do.\r\n"
+  - text: "\u201CHey! Take my hand!\u201D You see the spirit from before, reaching
+      out to you from above.\r This looks like your only way out. You grasp the hand,
+      and feel yourself pulled off the\r floor and off into something else entirely.
+      You\u2019ve escaped."
+  next: {fileID: 0}

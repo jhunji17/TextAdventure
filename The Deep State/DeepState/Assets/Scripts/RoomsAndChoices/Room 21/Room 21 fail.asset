@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 21 fail
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "The ticking grows unbearably loud. Every clock has picked up its speed
+      so the ticking\r all melds together into a seizing screech. The stone clock
+      beneath you shatters, leaving\r you falling. Down, down, down you go\u2026"
+  next: {fileID: 11400000, guid: 9332477c0e42a5247afce099ae1373fe, type: 2}

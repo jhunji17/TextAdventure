@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 17 goblin
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: '"Haven''t you seen a goblin before? You must be new. Don''t worry, the
+      priests will have some use for you. As for me, they trapped me in here and
+      made me build stuff for them. If you help me get free, I''ll make it worth
+      your while."'
+  next: {fileID: 11400000, guid: 03e6db6695815e640b947b182eda8dfa, type: 2}

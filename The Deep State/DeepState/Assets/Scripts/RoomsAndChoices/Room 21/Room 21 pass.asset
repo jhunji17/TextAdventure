@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 21 pass
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "The ticking goes silent. In the otherwise empty sound, the long chime
+      of a\r grandfather clock reverberates out from where you stand. The clock beneath
+      you slides\r away, allowing you to jump down from where it sat. Down, down,
+      down you go\u2026"
+  next: {fileID: 11400000, guid: 2a1b55e6e95f60e43a6d6759171ce863, type: 2}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 24 root
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: You enter the room, and are faced with a bizarre sight. A plinth stands
+      in the center of the room, made of dark black stone upon which rests a crystal
+      skull. In a circle around the skull are candles glowing with an eerie purple
+      flame. All else except one, next to which rests a torch with a similar flame.
+      Surrounding the candles are skeletons, and there appear to be old weapons like
+      swords and bows. Ahead, you see can see another door.
+  next: {fileID: 11400000, guid: 639e5ce64166ea749bcc14598f61de87, type: 2}

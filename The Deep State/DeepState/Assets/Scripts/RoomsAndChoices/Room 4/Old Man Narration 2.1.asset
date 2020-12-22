@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Old Man Narration 2.1
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "\"Lets just say age has lost almost all meaning to me,\" he says, then
+      points to a bookshelf in the corner of the room \u201Cbut if you want some
+      idea, I\u2019ve been here long enough to memorise every word of every book
+      on that shelf.\u201D"
+  next: {fileID: 11400000, guid: d848e051206f4e04f83b1058daa3348a, type: 2}

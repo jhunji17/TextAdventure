@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: 4, 8
+  m_EditorClassIdentifier: 
+  description: A stick figure is etched on the wall.
+  options:
+  - text: go north.
+    outcome: {fileID: 11400000, guid: 4d5a4aba62d3ff545b4515f1f233fa55, type: 2}
+  - text: go west.
+    outcome: {fileID: 11400000, guid: e703ccecfd6bea4499788614b90a78af, type: 2}
+  number: 0

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: Room 1 Choice 1
+  m_EditorClassIdentifier: 
+  description: What would you like to do?
+  options:
+  - text: Pick the left priest's pockets.
+    outcome: {fileID: 11400000, guid: 2bb00028a2839e54ab7adeb9f8329409, type: 2}
+  - text: Pick the right priest's pockets.
+    outcome: {fileID: 11400000, guid: 6133481a6d2aba9468f951543c2917a1, type: 2}
+  - text: Leave the room.
+    outcome: {fileID: 11400000, guid: 24da6ef3858dba342a806b6eaac914df, type: 2}
+  number: 0

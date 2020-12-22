@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: Archway reading
+  m_EditorClassIdentifier: 
+  description: What will you do?
+  options:
+  - text: Read the left archway's inscription.
+    outcome: {fileID: 11400000, guid: 8767e0e1b72796c4b820cc8b093b229e, type: 2}
+  - text: Read the middle archway's inscription.
+    outcome: {fileID: 11400000, guid: 9c2984e6ffcde124c9a80d0b0449f283, type: 2}
+  - text: Read the right archway's inscription.
+    outcome: {fileID: 11400000, guid: 463f301ba6e1cfa45ae80619f4be7e1a, type: 2}
+  - text: Exit through the left archway.
+    outcome: {fileID: 11400000, guid: 1be581abbdf143743bc7a9374b191bf2, type: 2}
+  - text: Exit through the middle archway
+    outcome: {fileID: 11400000, guid: 448f8ee505c4c7d48b6e40a481c02d59, type: 2}
+  - text: Exit through the right archway.
+    outcome: {fileID: 11400000, guid: 2649f7e1d3d1c28479908fe165b5f1da, type: 2}
+  number: 0

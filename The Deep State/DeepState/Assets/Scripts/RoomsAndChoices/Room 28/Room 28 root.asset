@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 28 root
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "The room you\u2019ve entered is dim, but you can see it is fairly spacious.
+      In the darkness you can\r make out a slab of stone and unlit candles\u2014it
+      appears to be an altar of some kind. You are about to step forward when the
+      room bursts with light. The candles have been lit, and you see now that you
+      are not alone. Priest like figures emerge from their shadowed crevices. With
+      them,\r held back by a chain, is a snarling creature with distinctive yellow
+      eyes."
+  - text: "\u201CAre you worthy?\u201D one\r of the priests asks. \u201CWe will see.\u201D
+      The priest holding the creature\u2019s speaks from beneath her\r hood, \u201COur
+      eudaemon will sniff out your spirit. If the stink of ill will has not yet tainted
+      your soul,\r you may pass on freely from here.\u201D She lets go of the chain
+      and creature makes its way toward\r you, but slowly. You sense that you must
+      be compliant, and very, very still. Who knows what could set it off?"
+  next: {fileID: 11400000, guid: 4889775c4a0faee4f826ef82a77e8e11, type: 2}

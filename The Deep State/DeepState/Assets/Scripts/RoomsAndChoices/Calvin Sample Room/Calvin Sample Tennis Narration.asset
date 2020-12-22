@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Calvin Sample Tennis Narration
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: lit.
+  - text: We will have decision points like the one you just saw that controls where
+      in the story you progress (not just 2-way decisions in the final product, possibly
+      up to 8-way paths)
+  - text: With all that being said, we are having trouble with deciding the art style
+      because we do not have an artist on the team.
+  - text: 'We are leaning towards one of two options: a fantasy-themed adventure
+      or a more simple ominous white text on black sort of minimalist aesthetic focusing
+      more on having a nice atmosphere'
+  - text: Which sounds more your style?
+  next: {fileID: 11400000, guid: 609bd9f208cac1244a361b2a45ff8f7b, type: 2}

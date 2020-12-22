@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674db0b272fed9847b53c68541009d74, type: 3}
+  m_Name: Blindfold challenge
+  m_EditorClassIdentifier: 
+  description: 
+  text: Player must blindfold themselves and dim the lights. The player must navigate
+    from one end of the room to a person standing at the other end. Each time they
+    bump into something 10 seconds are added to their time.
+  itemGain: 0
+  itemName: 
+  itemImage: {fileID: 0}
+  itemCheck: 0
+  ifItem: {fileID: 0}
+  ifNoItem: {fileID: 0}
+  next: {fileID: 11400000, guid: 6b528333e7f7ec443bf2361c8c2522b1, type: 2}

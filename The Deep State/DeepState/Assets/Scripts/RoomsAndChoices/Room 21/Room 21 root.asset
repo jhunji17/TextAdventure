@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 21 root
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "As you catch your breath from the last encounter, you hear a cacophony
+      of ticking sounds all\r around you. The walls, the ceiling, and the floor are
+      all covered in clocks. Maybe even made out of clocks. Each with its own unsynchronized
+      tick. Three huge stone clocks embedded into\r the floor provide the deepest
+      and most resounding of the ticks echoing around you. "
+  - text: "Next to the\r middle stone clock, a sole patch of open ground bears an
+      inscription: \u201CFeeling \u2018out of time\u2019? To\r find your way back
+      to your goal, listen and stand upon the stone clock whose tick is true.\u201D"
+  next: {fileID: 0}

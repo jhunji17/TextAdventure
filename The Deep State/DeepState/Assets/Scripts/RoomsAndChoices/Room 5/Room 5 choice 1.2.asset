@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: Room 5 choice 1.2
+  m_EditorClassIdentifier: 
+  description: What will you do?
+  options:
+  - text: Run.
+    outcome: {fileID: 11400000, guid: 6decb030453ef674d8c7c1e9f39b6906, type: 2}
+  - text: Attempt to fight it off.
+    outcome: {fileID: 11400000, guid: cf0abed3e5f28484488ceafab5f8a543, type: 2}
+  - text: Stroke the bear.
+    outcome: {fileID: 11400000, guid: ecdcb02a353ce7947b3b076f6aaf51dd, type: 2}
+  number: 0

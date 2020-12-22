@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Old Man Narration 1
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "Smiling, the old man puts down the gun and says in a wheezing voice, \u201Cand
+      who might you be, surely not another group of dumb explorers searching for
+      the elixir. The last group all met horrible ends. Ah well I suppose if you\u2019ve
+      made it this far my words won\u2019t stop you. As for me, I\u2019m just experiment
+      33, or at least that\u2019s been my name so long I don\u2019t remember the
+      original."
+  next: {fileID: 11400000, guid: d8a027d1bf2b59849b027e948e040ed5, type: 2}

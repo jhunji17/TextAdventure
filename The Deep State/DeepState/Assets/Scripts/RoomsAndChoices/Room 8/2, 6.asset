@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: 2, 6
+  m_EditorClassIdentifier: 
+  description: 
+  options:
+  - text: go south.
+    outcome: {fileID: 11400000, guid: f15d225d784e8104eb3e6df502cdcac5, type: 2}
+  - text: so west.
+    outcome: {fileID: 11400000, guid: 69fb8d3b76fd35749900e7cb16b4b337, type: 2}
+  number: 0

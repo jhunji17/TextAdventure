@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: Test tube choice
+  m_EditorClassIdentifier: 
+  description: '"Drink one, we insist!"'
+  options:
+  - text: Green tube.
+    outcome: {fileID: 11400000, guid: 16851efac9cecc7489fb7d930032d910, type: 2}
+  - text: Red tube.
+    outcome: {fileID: 11400000, guid: 5b872b16f026fec4f9c760fd5f23944f, type: 2}
+  - text: Blue tube.
+    outcome: {fileID: 11400000, guid: 2a722a1ffc0593148963b821bf2eef57, type: 2}
+  - text: Yellow tube.
+    outcome: {fileID: 11400000, guid: 0653e271e49110c4d96be74b1af5b6e5, type: 2}
+  - text: Shout "Mama aint raise no druggie!"
+    outcome: {fileID: 11400000, guid: ca08e5159b8cd5a4099de7157c59fe8a, type: 2}
+  number: 0

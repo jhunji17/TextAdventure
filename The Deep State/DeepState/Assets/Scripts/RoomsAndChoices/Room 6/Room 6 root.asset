@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 6 root
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "Moving through the door, you\u2019re met with a similar room as before:
+      well-lit and sparsely\r decorated. But before you now lie three stone archways,
+      each marking a distinct path to\r pursue. Above each is an inscription."
+  next: {fileID: 11400000, guid: 217802fd1f852824c9d9ddb4d9a6ff67, type: 2}

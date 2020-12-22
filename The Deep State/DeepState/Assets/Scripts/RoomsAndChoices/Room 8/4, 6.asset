@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: 4, 6
+  m_EditorClassIdentifier: 
+  description: A mushroom is etched on the wall.
+  options:
+  - text: go north.
+    outcome: {fileID: 11400000, guid: a66e28a043d6b45468e600f455e53946, type: 2}
+  - text: go south.
+    outcome: {fileID: 11400000, guid: bd7be55a9f27ab946a96e6383bb880cb, type: 2}
+  - text: go west.
+    outcome: {fileID: 11400000, guid: ad32d4ec557e84f49aded64bb976654f, type: 2}
+  - text: give up.
+    outcome: {fileID: 11400000, guid: 2bb41c14dc188cd4ebc6cf231af00363, type: 2}
+  number: 0

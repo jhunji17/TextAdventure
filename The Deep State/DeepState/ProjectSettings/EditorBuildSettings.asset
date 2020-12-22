@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ecc3714f7205a0d4e8607cb9fb9479bc
+  - enabled: 1
+    path: Assets/Scenes/Staging.unity
+    guid: 41117535659e7ef488489cbccabe3f74
+  - enabled: 1
+    path: Assets/Scenes/TrustFallScenes/TrustFall.unity
+    guid: e8cd506ce7a62064aa195b17c0515c95
+  - enabled: 1
+    path: Assets/Scenes/TrustFallScenes/Results.unity
+    guid: 8fc9c5b49d07f8546a2bdce383361427
+  - enabled: 1
+    path: Assets/Scenes/TrustFallScenes/PlayerChoose.unity
+    guid: e4dac4d2fbfee6444aaa4ade4b1b03c0
+  - enabled: 1
+    path: Assets/Scenes/RoomScene.unity
+    guid: 0ba1c19a2056030488fd81377d9cc6b3
+  - enabled: 1
+    path: Assets/Scenes/VideoScene.unity
+    guid: ff8ae0c64460e9448b5655225e4dd806
+  m_configObjects: {}

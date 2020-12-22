@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 8 root
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: "You wake up surrounded by a pile of bones, the stink of rot assaults your
+      senses. At least\r you\u2019re alive. You feel a cool of mist on your face;
+      a thick fog lies low throughout this room. In the near distance, you can make
+      out multiple paths to choose from. Beneath your feet, you see an etched depiction
+      of a bat."
+  - text: It appears to be a maze. You decide to use cardinal direction to stay coordinated.
+  next: {fileID: 11400000, guid: 8b31f9b71bb78494884378bf9099fd0a, type: 2}

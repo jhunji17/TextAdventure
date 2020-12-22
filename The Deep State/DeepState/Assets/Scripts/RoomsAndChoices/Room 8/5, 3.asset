@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: 5, 3
+  m_EditorClassIdentifier: 
+  description: A hand is etched on the floor.
+  options:
+  - text: go north.
+    outcome: {fileID: 11400000, guid: ef7ba3782fdd4574d8c98de7c64eca39, type: 2}
+  - text: go east.
+    outcome: {fileID: 11400000, guid: 9ce456391e83bf74683e246274e56632, type: 2}
+  - text: go south.
+    outcome: {fileID: 11400000, guid: 67b1531210728744b831aabaa8f23de0, type: 2}
+  - text: go west.
+    outcome: {fileID: 11400000, guid: 435d61474e0e26c4fa69b32d680a304b, type: 2}
+  - text: give up.
+    outcome: {fileID: 11400000, guid: 2bb41c14dc188cd4ebc6cf231af00363, type: 2}
+  number: 0

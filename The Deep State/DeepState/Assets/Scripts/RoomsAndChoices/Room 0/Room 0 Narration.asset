@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 0 Narration
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: You find yourselves in a dark misty cavern, the air is damp, and there
+      is a foul odor. You look around at each other, tension palpable in the room.
+      In front of you lie two large stone arches. One is open and leads into a dark
+      corridor, and the other is blocked by large stones.
+  - text: A tiny gap can be seen in the top right, and a hint of light seems to be
+      shining through. There is also an ominous hole in the middle of the ground
+      that seems to lead to a chute of some kind.
+  next: {fileID: 11400000, guid: f96bce2c17c710a4aa33d6b14049ac74, type: 2}

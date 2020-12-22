@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Room 1 Root
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: After walking down a long corridor you eventually find yourselves in a
+      small room. Two skeletons lie in the middle of the room, both face down towards
+      you, arms outstretched. From their clothes they look like priests of some kind.
+      Suddenly you hear an ominous crash in the distance, and then the unmistakable
+      thud, thud, thud of footsteps, coming from a corridor on the left. A small
+      door can be made out on your right.
+  next: {fileID: 11400000, guid: 79ab9482dde3be44093cffabd239d869, type: 2}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: Room 3 Bridge choice
+  m_EditorClassIdentifier: 
+  description: Advance onto
+  options:
+  - text: the rope bridge.
+    outcome: {fileID: 11400000, guid: b1f954fe40637204f80959270c425eab, type: 2}
+  - text: the brick bridge.
+    outcome: {fileID: 11400000, guid: cbfbf7a7681ea9d4885edab4aa44076e, type: 2}
+  - text: the steel bridge.
+    outcome: {fileID: 11400000, guid: 25b8f6ef97ebd8147a22bd3a9182ae41, type: 2}
+  number: 0

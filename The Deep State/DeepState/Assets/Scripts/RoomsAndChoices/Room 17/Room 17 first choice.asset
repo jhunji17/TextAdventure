@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23439aaf119e40d4fae52cbf4cfa7faa, type: 3}
+  m_Name: Room 17 first choice
+  m_EditorClassIdentifier: 
+  description: You decide to speak to him.
+  options:
+  - text: What are you doing?
+    outcome: {fileID: 11400000, guid: f96a2366b02d4a045a52ddd5bb043147, type: 2}
+  - text: Can I help you?
+    outcome: {fileID: 11400000, guid: 0017d9c97deb4f34ea50c249bcc4be3d, type: 2}
+  - text: Who are you?
+    outcome: {fileID: 11400000, guid: 0938bb0409044424b8bd6492b0188d79, type: 2}
+  number: 0

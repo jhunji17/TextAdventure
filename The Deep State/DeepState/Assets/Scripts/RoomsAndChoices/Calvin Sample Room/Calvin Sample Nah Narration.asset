@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08708ca8d3c21d44793b9b46e2a160a9, type: 3}
+  m_Name: Calvin Sample Nah Narration
+  m_EditorClassIdentifier: 
+  description: 
+  pages:
+  - text: Well sucks go put it on our feedback then pls
+  - text: And you should go back and play again to go the cOrRect route to see some
+      background info for the feedback qs.
+  - text: Actually, Ill make it easy for you (how kind of me)
+  next: {fileID: 11400000, guid: 9417678514a7e374e95bc53cf288fd6d, type: 2}
