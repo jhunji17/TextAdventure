@@ -72,7 +72,6 @@
     <Compile Include="Assets\Scripts\CoreClasses\Player.cs" />
     <Compile Include="Assets\Scripts\CoreClasses\Room.cs" />
     <Compile Include="Assets\Scripts\CoreClasses\RoomNavigation.cs" />
-    <Compile Include="Assets\Scripts\Managers\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\MiniGames\BoxRunner.cs" />
     <Compile Include="Assets\Scripts\MiniGames\ClickerManager.cs" />
     <Compile Include="Assets\Scripts\MiniGames\MazeManager.cs" />
@@ -627,16 +626,16 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/jhunj/gdd/The Deep State/DeepState/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/jhunj/Projects/TextAdventure/The Deep State/DeepState/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/jhunj/gdd/The Deep State/DeepState/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/jhunj/Projects/TextAdventure/The Deep State/DeepState/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/jhunj/gdd/The Deep State/DeepState/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/jhunj/Projects/TextAdventure/The Deep State/DeepState/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/jhunj/gdd/The Deep State/DeepState/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/jhunj/Projects/TextAdventure/The Deep State/DeepState/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

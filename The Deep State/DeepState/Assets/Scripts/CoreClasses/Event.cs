@@ -20,6 +20,8 @@ public class Event : Interactable
     public Interactable ifNoItem;
 
     public Interactable next;
+
+
     public void eventAction(Player p) {
         if (itemGain) {
             p.items.Add(itemName);

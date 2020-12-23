@@ -98,6 +98,7 @@ public class GameController : MonoBehaviour
             }      
         }
     }
+
     public void decision(int i) {
         Choice c = (Choice) currentNode;
         roomDisplay.clearDecisions();

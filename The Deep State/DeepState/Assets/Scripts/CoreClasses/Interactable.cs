@@ -14,6 +14,7 @@ public abstract class Interactable : ScriptableObject
     [SerializeField]
     string description;
     string identifier;
+    
 
     public string getDescription()
     {
