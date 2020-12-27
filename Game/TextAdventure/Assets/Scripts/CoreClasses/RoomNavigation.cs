@@ -19,10 +19,10 @@ public class RoomNavigation : MonoBehaviour
     [SerializeField]
     public Room InitialRoom;
 
-    public GameObject parent;
+    
     public Player[] players;
     public Player currentPlayer;
-    public string recentWinner;
+    //public string recentWinner;
 
     void Awake() {
         //controller = GetComponent<RoomNavigation>().GetComponent
@@ -42,6 +42,7 @@ public class RoomNavigation : MonoBehaviour
     //     recentWinner = null;
     //     return temp;
     // }
+
     public List<Player> PlayersInRoom()
     {
         List<Player> playersInR = new List<Player>();

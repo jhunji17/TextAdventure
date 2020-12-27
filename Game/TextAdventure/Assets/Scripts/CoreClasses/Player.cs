@@ -20,7 +20,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     public int health { get; set; } = 3;
     [SerializeField]
-    public bool isAlive { get; set; }
+    public bool isAlive { get; set; } = true;
+    
     public Interactable currentNode;
     
 
