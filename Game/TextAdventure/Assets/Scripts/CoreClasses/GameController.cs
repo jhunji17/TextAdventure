@@ -11,15 +11,11 @@ public class GameController : MonoBehaviour
     [SerializeField]
     public RoomNavigation roomNavigation;
 
-    /*UI stuff
-    public RoomDisplay roomDisplay;
-    public PlayerUI playerUI;
-    */ 
+    
 
     public Interactable currentNode;
+
     private bool awaitingUserInput = false;
-    //private bool introShown = false;
-    //private int currentPage;
 
     private bool temp = true;
     
@@ -36,7 +32,7 @@ public class GameController : MonoBehaviour
     game start or sometinng this will 
     probably be one of the first methods to be called
     */
-    public void OnIntroEnd() {
+    public void OnCharactersCreated() {
         //Room MyRoom = roomNavigation.InitialRoom;
         //List<Player> players = roomNavigation.PlayersInRoom();
         initialiseRoom(roomNavigation.InitialRoom);
@@ -60,194 +56,214 @@ public class GameController : MonoBehaviour
         
     }
 
+
+
+    
+
     //NEEDS REWORKING WITH JOSH MUCH CONFUSION
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0)) {
-    //         if (introShown) {
-    //             roomDisplay.hideIntro();
-    //             introShown = false;
-    //             newNode(currentNode);
-    //         }
-    //         else if (currentNode is Narration) {
-    //             narrationAction((Narration) currentNode);
-    //         }
-    //         else if (currentNode is Event) {
-    //             roomDisplay.hideDialogue();
-    //             if (temp) {
-    //                 foreach (Player p in roomNavigation.PlayersInRoom()) {
-    //                     if (p.currentNode == currentNode) {
-    //                         p.nodesCleared += 1;
-    //                         p.currentNode = ((Event) currentNode).next;
-    //                         break;
-    //                     }
-    //                 }  
-    //                 bool again = false;
-    //                 foreach (Player p in roomNavigation.PlayersInRoom()) {
-    //                     if (p.currentNode == currentNode) {
-    //                         again = true;
-    //                         break;
-    //                     }
-    //                 }
-    //                 if (again) {
+    void Update()
+    {
+        if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0)) {
+            if (introShown) {
+                roomDisplay.hideIntro();
+                introShown = false;
+                newNode(currentNode);
+            }
+            else if (currentNode is Narration) {
+                narrationAction((Narration) currentNode);
+            }
+            else if (currentNode is Event) {
+                roomDisplay.hideDialogue();
+                if (temp) {
+                    foreach (Player p in roomNavigation.PlayersInRoom()) {
+                        if (p.currentNode == currentNode) {
+                            p.nodesCleared += 1;
+                            p.currentNode = ((Event) currentNode).next;
+                            break;
+                        }
+                    }  
+                    bool again = false;
+                    foreach (Player p in roomNavigation.PlayersInRoom()) {
+                        if (p.currentNode == currentNode) {
+                            again = true;
+                            break;
+                        }
+                    }
+                    if (again) {
                 
-    //                     eventAction((Event) currentNode);
-    //                 }
-    //                 else {
-    //                     playerUI.HidePlayerUI();
-    //                     newNode(roomNavigation.nextPlayer().currentNode);
-    //                 } 
-    //             } 
-    //             else {
-    //                 newNode(((Event) currentNode).next);
-    //             }
-    //         }      
-    //     }
-    // }
+                        eventAction((Event) currentNode);
+                    }
+                    else {
+                        playerUI.HidePlayerUI();
+                        newNode(roomNavigation.nextPlayer().currentNode);
+                    } 
+                } 
+                else {
+                    newNode(((Event) currentNode).next);
+                }
+            }      
+        }
+    }
 
-    // public void decision(int i) {
-    //     Choice c = (Choice) currentNode;
-    //     roomDisplay.clearDecisions();
-    //     if (temp) {
-    //         foreach (Player p in roomNavigation.PlayersInRoom()) {
-    //             if (p.currentNode == currentNode) {
-    //                 p.nodesCleared += 1;
-    //                 p.currentNode = c.options[i].outcome;
-    //                 break;
-    //             }
-    //         }
-    //         bool again = false;
-    //         foreach (Player p in roomNavigation.PlayersInRoom()) {
-    //             if (p.currentNode == currentNode) {
-    //                 again = true;
-    //                 break;
-    //             }
-    //         }
-    //         if (again) {
+    public void decision(int i) {
+        Choice c = (Choice) currentNode;
+        roomDisplay.clearDecisions();
+        if (temp) {
+            foreach (Player p in roomNavigation.PlayersInRoom()) {
+                if (p.currentNode == currentNode) {
+                    p.nodesCleared += 1;
+                    p.currentNode = c.options[i].outcome;
+                    break;
+                }
+            }
+            bool again = false;
+            foreach (Player p in roomNavigation.PlayersInRoom()) {
+                if (p.currentNode == currentNode) {
+                    again = true;
+                    break;
+                }
+            }
+            if (again) {
                 
-    //             choiceAction((Choice) currentNode);
-    //         }
-    //         else {
-    //             playerUI.HidePlayerUI();
-    //             newNode(roomNavigation.nextPlayer().currentNode);
-    //         }
+                choiceAction((Choice) currentNode);
+            }
+            else {
+                playerUI.HidePlayerUI();
+                newNode(roomNavigation.nextPlayer().currentNode);
+            }
             
-    //     }
-    //     else {
-    //         newNode(c.options[i].outcome);
-    //     }
-    // }
-    // private void narrationAction(Narration n) {
-    //     if (roomDisplay.completeText()) {
+        }
+        else {
+            newNode(c.options[i].outcome);
+        }
+    }
+    private void narrationAction(Narration n) {
+        if (roomDisplay.completeText()) {
 
-    //         if (currentPage == n.pages.Length) {
-    //             roomDisplay.hideDialogue();
-    //             if (temp) {
-    //                 foreach (Player p in roomNavigation.PlayersInRoom()) {
-    //                     if (p.currentNode == currentNode) {
-    //                         p.nodesCleared += 1;
-    //                         p.currentNode = n.next;
-    //                     }
-    //                 }
-    //             }
-    //             newNode(n.next);
-    //         }
-    //         else {
+            if (currentPage == n.pages.Length) {
+                roomDisplay.hideDialogue();
+                if (temp) {
+                    foreach (Player p in roomNavigation.PlayersInRoom()) {
+                        if (p.currentNode == currentNode) {
+                            p.nodesCleared += 1;
+                            p.currentNode = n.next;
+                        }
+                    }
+                }
+                newNode(n.next);
+            }
+            else {
                 
-    //             roomDisplay.changeDialogue(n.pages[currentPage].text);
-    //             currentPage += 1;
+                roomDisplay.changeDialogue(n.pages[currentPage].text);
+                currentPage += 1;
                 
-    //         }
-    //     }
-    // }
-    // private void choiceAction(Choice c) {
-    //     roomDisplay.displayDialogue();
-    //     if (temp) {
-    //         foreach (Player p in roomNavigation.PlayersInRoom()) {
-    //             if (p.currentNode == currentNode) {
-    //                 playerUI.LoadPlayerUI(p);
-    //                 break;
-    //             }
-    //         }
-    //     }
-    //     roomDisplay.decisions(c);
+            }
+        }
+    }
+    private void choiceAction(Choice c) {
+        roomDisplay.displayDialogue();
+        if (temp) {
+            foreach (Player p in roomNavigation.PlayersInRoom()) {
+                if (p.currentNode == currentNode) {
+                    playerUI.LoadPlayerUI(p);
+                    break;
+                }
+            }
+        }
+        roomDisplay.decisions(c);
 
-    // }
-    // private void chanceAction(Chance c) {
-    //     System.Random rd = new System.Random();
-    //     int rand_num = rd.Next(0, 100);
-    //     int total = 0;
-    //     Path result = new Path();
-    //     foreach (Path p in c.paths) {
-    //         total += p.chance;
-    //         if (rand_num < total) {
-    //             result = p;
-    //             break;
-    //         }
-    //     }
-    //     newNode(result.outcome);
-    // }
-    // private void exitAction(ExitCorridor exit) {
-    //     if (temp) {
-    //         foreach(Player p in roomNavigation.PlayersInRoom()) {
-    //             if (p.currentNode == currentNode) {
-    //                 roomNavigation.playerLocations[p] = exit.nextRoom;
-    //                 p.roomsCleared += 1;
-    //                 p.nodesCleared = 0;
-    //             }
-    //         }
-    //         if (roomNavigation.PlayersInRoom().Count > 0) {
-    //             newNode(roomNavigation.nextPlayer().currentNode);
-    //         }
-    //         else {
-    //             Room next = roomNavigation.nextRoom();
-    //             initialiseRoom(next);
-    //         }
-    //     }
-    //     else {
-    //         initialiseRoom(exit.nextRoom);
-    //     }
+    }
+    private void chanceAction(Chance c) {
+        System.Random rd = new System.Random();
+        int rand_num = rd.Next(0, 100);
+        int total = 0;
+        Path result = new Path();
+        foreach (Path p in c.paths) {
+            total += p.chance;
+            if (rand_num < total) {
+                result = p;
+                break;
+            }
+        }
+        newNode(result.outcome);
+    }
+
+    //cuurent node is the exit 
+    //finished??
+    private void exitAction(ExitCorridor exit) {
+        // if (temp) {
+        foreach(Player p in roomNavigation.PlayersInRoom()) {
+            if (p.currentNode == currentNode) {
+                roomNavigation.playerLocations[p] = exit.nextRoom;
+                p.roomsCleared += 1;
+                p.nodesCleared = 0;
+                p.room = exit.nextRoom;
+            }
+        }
+        if (roomNavigation.PlayersInRoom().Count > 0) {
+            newNode(roomNavigation.nextPlayer().currentNode);
+        }
+        else {
+            Room next = roomNavigation.nextRoom();
+            initialiseRoom(next);
+        }
+        // }
+        // else {
+        //     initialiseRoom(exit.nextRoom);
+        // }
         
-    // }
+    }
+    
+    private void healthDamageAction(HealthDamage node){
+
+    }
+
+    private void itemGainLossAction(ItemGainLoss node){
+
+    }
+
+    private void rewardPunishmentAction(RewardPunishment node){
+
+    }
 
 
-    //WE PROBABLY ARENT GONNA HAVE AN EVENT CLASS
-    // private void eventAction(Event e) {
-    //     roomDisplay.eventDisplay(e);
-    //     if (temp) {
-    //         foreach (Player p in roomNavigation.PlayersInRoom()) {
-    //             if (p.currentNode == currentNode) {
-    //                 e.eventAction(p);
-    //                 playerUI.LoadPlayerUI(p);
-                    
-    //                 break;
-    //             }
-    //         }
-    //     }
+    //finished?
+    public void newNode(Interactable node) {
+        currentNode = node;
 
-    //}
+        if (node is Choice) {
+            choiceAction((Choice) node);
+        }
 
-    //THIS LOOKS GOOD BUT NEEDS MINOR TWEAKS
-    // public void newNode(Interactable node) {
-    //     currentNode = node;
-    //     if (node is Choice) {
-    //         choiceAction((Choice) node);
-    //     }
-    //     else if (node is Narration) {
-    //         currentPage = 0;
-    //         roomDisplay.displayDialogue();
-    //         narrationAction((Narration) node);
-    //     }
-    //     else if (node is Chance) {
-    //         chanceAction((Chance) node);
-    //     }
-    //     else if (node is ExitCorridor) {
-    //         exitAction((ExitCorridor) node);
-    //     }
-    //     else if (node is Event) {
-    //         eventAction((Event) node);
-    //     }
-    // }
+        else if (node is HealthDamage){
+            healthDamageAction((HealthDamage) node);
+        }
+
+        else if (node is Narration) {
+            //UI shit
+            narrationAction((Narration) node);
+        }
+
+        else if (node is Chance) {
+            chanceAction((Chance) node);
+        }
+
+        else if (node is ExitCorridor) {
+            exitAction((ExitCorridor) node);
+
+        } else if (node is ItemGainLoss) {
+            itemGainLossAction((ItemGainLoss) node);
+        }
+        
+        else if (node is RewardPunishment) {
+            rewardPunishmentAction((RewardPunishment) node);
+        }
+
+        else{
+            Debug.Log("it should never get here!!!!!!   :( ");
+        }
+        
+    }
 
 
 }

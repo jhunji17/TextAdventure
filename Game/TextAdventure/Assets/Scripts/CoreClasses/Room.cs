@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-[CreateAssetMenu(menuName = "DeepState/Room")]
+[CreateAssetMenu(menuName = "TextAdventure/Room")]
 public class Room : ScriptableObject {
 
     [SerializeField]

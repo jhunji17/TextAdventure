@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "DeepState/Interactable/Narration")]
+[CreateAssetMenu(menuName = "TextAdventure/Interactable/Narration")]
 public class Narration : Interactable
 {
     public Page[] pages;

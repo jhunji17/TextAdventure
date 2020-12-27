@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-[CreateAssetMenu(menuName = "DeepState/Interactable/Exit")]
+[CreateAssetMenu(menuName = "TextAdventure/Interactable/Exit")]
 public class ExitCorridor : Interactable
 {
 

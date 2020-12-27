@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(menuName = "DeepState/Interactable/Chance")]
+[CreateAssetMenu(menuName = "TextAdventure/Interactable/Chance")]
 public class Chance : Interactable
 {
     public Path[] paths;

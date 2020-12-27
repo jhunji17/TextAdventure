@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(menuName = "DeepState/Interactable/HealthDamage")]
+[CreateAssetMenu(menuName = "TextAdventure/Interactable/HealthDamage")]
 public class HealthDamage : Interactable{
 
     [TextArea(1, 30)]

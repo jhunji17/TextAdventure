@@ -77,19 +77,13 @@ public class RoomNavigation : MonoBehaviour
     
     public Room nextRoom() {
         int lowest = 100;
-        Room r;
+        Room r = null;
         foreach(Player p in players) {
             if(p.roomsCleared <= lowest)
             lowest = p.roomsCleared;
             r = p.room;
         }
-        foreach(Player p in players) {
-            if (p.roomsCleared == lowest) {
-                currentRoom = playerLocations[p];
-                return currentRoom;
-            }
-        }
-        return null;
+        return r;
     }
 
 
@@ -98,15 +92,14 @@ public class RoomNavigation : MonoBehaviour
 
     public Player nextPlayer() {
         int lowest = 100;
+        Player player = null;
         foreach(Player p in PlayersInRoom()) {
-            lowest = Math.Min(lowest, p.nodesCleared);
-        }
-        foreach(Player p in PlayersInRoom()) {
-            if (p.nodesCleared == lowest) {
-                return p;
+            if(p.nodesCleared <= lowest){
+                lowest = p.nodesCleared;
+                player = p;
             }
         }
-        return null;
+        return player;
     }
     
 

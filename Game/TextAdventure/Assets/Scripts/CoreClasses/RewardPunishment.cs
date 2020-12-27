@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(menuName = "DeepState/Interactable/RewardPunishment")]
+[CreateAssetMenu(menuName = "TextAdventure/Interactable/RewardPunishment")]
 public class RewardPunishment : Interactable{
 
     [TextArea(1, 30)]
