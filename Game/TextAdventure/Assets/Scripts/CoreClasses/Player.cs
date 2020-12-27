@@ -9,16 +9,16 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    public string name { get; set; }
+    public string Name { get; set; }
     [SerializeField]
     public List<Item> items { get; set; } = new List<Item>();
     [SerializeField]
-    //public Room room { get; set}
+    public Room room { get; set; }
     [SerializeField]
     public int roomsCleared { get; set; }
     public int nodesCleared {get; set;}
     [SerializeField]
-    public int health { get; set; } = 3
+    public int health { get; set; } = 3;
     [SerializeField]
     public bool isAlive { get; set; }
     public Interactable currentNode;
@@ -37,14 +37,6 @@ public class Player : MonoBehaviour
     }
     
 
-    public void damage(int x) 
-    {
-        health -= x;
-        if (health <= 0)
-        {
-            isAlive = false;
-        }
-        
-    }
+    
 
 }

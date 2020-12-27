@@ -13,5 +13,6 @@ public class Choice : Interactable
 [System.Serializable]
 public struct Option {
     public string text;
+    public string ItemRequirement;
     public Interactable outcome;
 }

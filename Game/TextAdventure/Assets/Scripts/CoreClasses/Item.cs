@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Item : ScriptableObject {
 
     [SerializeField]
-    public string name {get; ,set; }
+    public string Name {get; set; }
     public Sprite image;
     public bool used;
 }

@@ -8,14 +8,13 @@ using UnityEngine.UI;
 public class Room : ScriptableObject {
 
     [SerializeField]
-    public Interactable root;
+    public Interactable root {get;  set;}
     
 
     [TextArea]
     private string description;
     private int number;
     public Sprite background;
-
-
+    private bool cleared = false;
 }
 

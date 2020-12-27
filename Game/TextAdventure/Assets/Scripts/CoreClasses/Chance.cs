@@ -5,6 +5,7 @@ using UnityEngine;
 public class Chance : Interactable
 {
     public Path[] paths;
+    
 }
 
 [System.Serializable]
