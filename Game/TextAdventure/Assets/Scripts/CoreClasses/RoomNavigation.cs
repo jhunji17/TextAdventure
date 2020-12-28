@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,8 +24,10 @@ public class RoomNavigation : MonoBehaviour
     //public string recentWinner;
 
     void Awake() {
+        Debug.Log("RoomNavigationAwake");
         //controller = GetComponent<RoomNavigation>().GetComponent
-        controller = GetComponent<GameController>();
+        controller = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        currentRoom = InitialRoom;
     }
 
    
@@ -62,7 +63,7 @@ public class RoomNavigation : MonoBehaviour
         // players = g.players;
 
         //get "players" from ui player unput script
-        foreach (Player player in players)
+        foreach (Player player in GameController.)
         {
             
             player.roomsCleared = 0; 

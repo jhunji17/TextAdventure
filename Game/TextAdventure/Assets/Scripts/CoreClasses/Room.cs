@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Room : ScriptableObject {
 
     [SerializeField]
-    public Interactable root {get;  set;}
+    public Interactable root;
     
 
     [TextArea]
