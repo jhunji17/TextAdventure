@@ -105,7 +105,9 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void decision(int i) {
+
+    //needs to be merged with choice action
+    public void decision(int i, Choice choice) {
         Choice c = (Choice) currentNode;
         roomDisplay.clearDecisions();
         if (temp) {
@@ -160,33 +162,42 @@ public class GameController : MonoBehaviour
             }
         }
     }
-    private void choiceAction(Choice c) {
-        roomDisplay.displayDialogue();
-        if (temp) {
-            foreach (Player p in roomNavigation.PlayersInRoom()) {
-                if (p.currentNode == currentNode) {
-                    playerUI.LoadPlayerUI(p);
-                    break;
-                }
-            }
-        }
-        roomDisplay.decisions(c);
 
-    }
+
+
+
+    //PRETTY SURE THIS IS ALL UI SHIT
+    // private void choiceAction(Choice c) {
+    //     //UI ch
+    //     if (temp) {
+    //         foreach (Player p in roomNavigation.PlayersInRoom()) {
+    //             if (p.currentNode == currentNode) {
+    //                 playerUI.LoadPlayerUI(p);
+    //                 break;
+    //             }
+    //         }
+    //     }
+    //     roomDisplay.decisions(c);
+    // }
+
+
+
     private void chanceAction(Chance c) {
         System.Random rd = new System.Random();
-        int rand_num = rd.Next(0, 100);
-        int total = 0;
+        double rand = rd.NextDouble();
+        double cumulative = 0.0;
+
         Path result = new Path();
         foreach (Path p in c.paths) {
-            total += p.chance;
-            if (rand_num < total) {
+            cumulative += p.chance;
+            if (rand< cumulative) {
                 result = p;
                 break;
             }
         }
         newNode(result.outcome);
     }
+
 
     //cuurent node is the exit 
     //finished??
@@ -231,6 +242,8 @@ public class GameController : MonoBehaviour
     public void newNode(Interactable node) {
         currentNode = node;
 
+
+        //choice needs a user input, 
         if (node is Choice) {
             choiceAction((Choice) node);
         }
