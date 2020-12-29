@@ -8,6 +8,7 @@ public class OnReadyClick : MonoBehaviour
 {
     private GameObject[] inputs;   
     public void ButtonClick()
+
     {
         ReadInputs();
         SceneChange();
@@ -31,6 +32,7 @@ public class OnReadyClick : MonoBehaviour
                 names.Add(input.text);
             }
         }
+        GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>().setNames(names);
     }
 
     

@@ -37,8 +37,9 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         Debug.Log("GameControllerAwake");
-        //TODO
-        //GeneratePlayers("find a way to transfer data from ui");
+        PlayerData data;
+        data = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        GeneratePlayers(data.getNames());
         StartGame();
     }
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RoomNavigator
   - InputField
+  - PlayerData
   layers:
   - Default
   - TransparentFX
