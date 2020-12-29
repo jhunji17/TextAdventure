@@ -15,5 +15,12 @@ public class OnReadyClick : MonoBehaviour
         SceneManager.LoadScene(sceneName: "RoomScene");
     }
 
+    public void ReadInputs(){
+        
+
+
+        //GameObject.FindGameObjectWithTag("GameController")
+    }
+
     
 }

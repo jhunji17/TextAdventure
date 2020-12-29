@@ -233,8 +233,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81740dd89cafa254f9eb5547b7f91d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomNavigation: {fileID: 0}
+  currentRoom: {fileID: 0}
   currentNode: {fileID: 0}
+  InitialRoom: {fileID: 0}
+  players: []
+  currentPlayer: {fileID: 0}
 --- !u!4 &132671875
 Transform:
   m_ObjectHideFlags: 0
@@ -248,52 +251,4 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1882804423
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1882804425}
-  - component: {fileID: 1882804424}
-  m_Layer: 0
-  m_Name: RoomNavigator
-  m_TagString: RoomNavigator
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1882804424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882804423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3426329ff6b55454e9538c65df343616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentRoom: {fileID: 0}
-  controller: {fileID: 0}
-  InitialRoom: {fileID: 11400000, guid: adaf69f443d24dd40a0d41c3b7ee79cd, type: 2}
-  players: []
-  currentPlayer: {fileID: 0}
---- !u!4 &1882804425
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882804423}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0195804, y: -0.6304014, z: -22.279999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

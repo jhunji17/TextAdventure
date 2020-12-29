@@ -9,49 +9,71 @@ using System;
 public class GameController : MonoBehaviour
 {
     [SerializeField]
-    public RoomNavigation roomNavigation;
-
+    //public RoomNavigation roomNavigation;
+    public Room currentRoom;
+    public Dictionary<Player,Room> playerLocations = new Dictionary<Player, Room>();
+    public Dictionary<Player,Interactable> playerNodes = new Dictionary<Player, Interactable>();
     public Interactable currentNode;
-
+    [SerializeField]
+    public Room InitialRoom;
     private bool awaitingUserInput = false;
 
-    private bool temp = true;
+    //private bool temp = true;
 
-    private List<Player> players { get; }
+    public Player[] players;
+    public Player currentPlayer;
 
 
 
-    void Awake()
-    {
-        Debug.Log("GameControllerAwake");
-        roomNavigation = GameObject.FindGameObjectWithTag("RoomNavigator").GetComponent<RoomNavigation>();
-    }
+    
 
     /*should be changed to
     game start or sometinng this will 
     probably be one of the first methods to be called
     */
-    public void OnCharactersCreated(List<Player> characters) 
+
+    #region Initialisation
+
+    void Awake()
     {
-        Room MyRoom = roomNavigation.InitialRoom;
-        List<Player> players = characters; 
-        initialiseRoom(roomNavigation.InitialRoom);
-        roomNavigation.InitiatePlayers();
+        Debug.Log("GameControllerAwake");
+        //TODO
+        GeneratePlayers("find a way to transfer data from ui");
+        StartGame();
     }
 
-    public void initialiseRoom(Room room)
+    //called by the ui somehow
+    public void GeneratePlayers(List<String> names) 
     {
-        //roomDisplay.newRoom(room);
-        roomNavigation.currentRoom = room;
-        currentNode = room.root;
-        //introShown = true;
-
-        foreach (Player p in roomNavigation.PlayersInRoom())
-        {
-            p.currentNode = currentNode;
+        players = new Player[names.Count];
+        for(int i = 0; i < names.Count; i++){
+            players[i] = Player.CreateInstance(names[i]);
         }
-
+        
     }
+
+    //TO BE FINISHED
+    private void StartGame(){
+        InitiateDictionaries();
+        initialiseRoom(InitialRoom);
+        //probably something to start a main game loop or something
+        
+    }
+
+    private void InitiateDictionaries()
+    {
+        foreach (Player player in players)
+        {   
+            playerLocations.Add(player, InitialRoom);
+            playerNodes.Add(player,InitialRoom.root);
+        }
+    }
+
+    public void initialiseRoom(Room room) {
+        currentRoom = room;
+        currentNode = room.root;
+    }
+    #endregion
 
     //NEEDS REWORKING WITH JOSH MUCH CONFUSION
     //    void Update()
@@ -175,101 +197,144 @@ public class GameController : MonoBehaviour
 
 
 
-    //    private void chanceAction(Chance c) {
-    //        System.Random rd = new System.Random();
-    //        double rand = rd.NextDouble();
-    //        double cumulative = 0.0;
+    // private void chanceAction(Chance c) {
+    //     System.Random rd = new System.Random();
+    //     double rand = rd.NextDouble();
+    //     double cumulative = 0.0;
 
-    //        Path result = new Path();
-    //        foreach (Path p in c.paths) {
-    //            cumulative += p.chance;
-    //            if (rand< cumulative) {
-    //                result = p;
-    //                break;
-    //            }
-    //        }
-    //        newNode(result.outcome);
-    //    }
-
-
-    //    //cuurent node is the exit 
-    //    //finished??
-    //    private void exitAction(ExitCorridor exit) {
-    //        // if (temp) {
-    //        foreach(Player p in roomNavigation.PlayersInRoom()) {
-    //            if (p.currentNode == currentNode) {
-    //                roomNavigation.playerLocations[p] = exit.nextRoom;
-    //                p.roomsCleared += 1;
-    //                p.nodesCleared = 0;
-    //                p.room = exit.nextRoom;
-    //            }
-    //        }
-    //        if (roomNavigation.PlayersInRoom().Count > 0) {
-    //            newNode(roomNavigation.nextPlayer().currentNode);
-    //        }
-    //        else {
-    //            Room next = roomNavigation.nextRoom();
-    //            initialiseRoom(next);
-    //        }
-    //        // }
-    //        // else {
-    //        //     initialiseRoom(exit.nextRoom);
-    //        // }
-
-    //    }
-
-    //    private void healthDamageAction(HealthDamage node){
-
-    //    }
-
-    //    private void itemGainLossAction(ItemGainLoss node){
-
-    //    }
-
-    //    private void rewardPunishmentAction(RewardPunishment node){
-
-    //    }
+    //     Path result = new Path();
+    //     foreach (Path p in c.paths) {
+    //         cumulative += p.chance;
+    //         if (rand< cumulative) {
+    //             result = p;
+    //             break;
+    //         }
+    //     }
+    //     newNode(result.outcome);
+    // }
 
 
-    //    //finished?
-    //    public void newNode(Interactable node) {
-    //        currentNode = node;
+
+    // private void exitAction(ExitCorridor exit) {
+        
+    //     foreach(Player p in PlayersInRoom()) {
+    //         if (p.currentNode == currentNode) {
+    //             playerLocations[p] = exit.nextRoom;
+    //             p.roomsCleared += 1;
+    //             p.nodesCleared = 0;
+    //             p.room = exit.nextRoom;
+    //         }
+    //     }
+    //     if (PlayersInRoom().Count > 0) {
+    //         newNode(nextPlayer().currentNode);
+    //     }
+    //     else {
+    //         Room next = nextRoom();
+    //         initialiseRoom(next);
+    //     }
+    // }
+
+    private void healthDamageAction(HealthDamage node){
+
+    }
+
+    private void itemGainLossAction(ItemGainLoss node){
+
+    }
+
+    private void rewardPunishmentAction(RewardPunishment node){
+
+    }
 
 
-    //        //choice needs a user input, 
-    //        if (node is Choice) {
-    //            choiceAction((Choice) node);
-    //        }
+    
+    // public void newNode(Interactable node) {
+    //     currentNode = node;
 
-    //        else if (node is HealthDamage){
-    //            healthDamageAction((HealthDamage) node);
-    //        }
 
-    //        else if (node is Narration) {
-    //            //UI shit
-    //            narrationAction((Narration) node);
-    //        }
+    //     //choice needs a user input, 
+    //     if (node is Choice) {
+    //         choiceAction((Choice) node);
+    //     }
 
-    //        else if (node is Chance) {
-    //            chanceAction((Chance) node);
-    //        }
+    //     else if (node is HealthDamage){
+    //         healthDamageAction((HealthDamage) node);
+    //     }
 
-    //        else if (node is ExitCorridor) {
-    //            exitAction((ExitCorridor) node);
+    //     else if (node is Narration) {
+    //         //UI shit
+    //         narrationAction((Narration) node);
+    //     }
 
-    //        } else if (node is ItemGainLoss) {
-    //            itemGainLossAction((ItemGainLoss) node);
-    //        }
+    //     else if (node is Chance) {
+    //         chanceAction((Chance) node);
+    //     }
 
-    //        else if (node is RewardPunishment) {
-    //            rewardPunishmentAction((RewardPunishment) node);
-    //        }
+    //     else if (node is ExitCorridor) {
+    //         exitAction((ExitCorridor) node);
 
-    //        else{
-    //            Debug.Log("it should never get here!!!!!!   :( ");
-    //        }
+    //     } else if (node is ItemGainLoss) {
+    //         itemGainLossAction((ItemGainLoss) node);
+    //     }
 
-    //    }
+    //     else if (node is RewardPunishment) {
+    //         rewardPunishmentAction((RewardPunishment) node);
+    //     }
+
+    //     else{
+    //         Debug.Log("it should never get here!!!!!!   :( ");
+    //     }
+
+    // }
+
+    
+
+
+
+    #region UsefulFunctions
+
+    private List<Player> PlayersInRoom()
+    {
+        List<Player> playersInR = new List<Player>();
+        foreach (KeyValuePair<Player, Room> i in playerLocations)
+        { 
+            if(i.Value == currentRoom)
+            {
+                playersInR.Add(i.Key);
+            }
+        }
+        return playersInR ;
+    }
+
+    
+
+    //REWORK
+    private Room nextRoom() {
+        int lowest = 100;
+        Room r = null;
+        foreach(Player p in players) {
+            if(p.roomsCleared <= lowest)
+            lowest = p.roomsCleared;
+            r = p.room;
+        }
+        return r;
+    }
+
+
+    //REWORK
+    private Player nextPlayerinRoom() {
+        int lowest = 100;
+        Player player = null;
+        foreach(Player p in PlayersInRoom()) {
+            if(p.nodesCleard.<= lowest){
+                lowest = p.nodesCleared;
+                player = p;
+            }
+        }
+        return player;
+    }
+    
+    #endregion
 
 
 }

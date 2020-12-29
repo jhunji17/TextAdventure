@@ -6,36 +6,40 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
-public class Player : MonoBehaviour
+public class Player : ScriptableObject
 {
     [SerializeField]
-    public string Name { get; set; }
-    [SerializeField]
-    public List<Item> items { get; set; } = new List<Item>();
-    [SerializeField]
-    public Room room { get; set; }
-    [SerializeField]
-    public int roomsCleared { get; set; }
-    public int nodesCleared {get; set;}
-    [SerializeField]
-    public int health { get; set; } = 3;
-    [SerializeField]
-    public bool isAlive { get; set; } = true;
-    
-    public Interactable currentNode;
-    
+    public static int Health = 3;
 
     
-
-    void Awake()
+    private string Name {get;}
+    private List<Item> items {get; set;}    
+    private int roomsCleared {get; set;}
+    private int nodesCleared {get; set;}
+    private int health {get; set;}
+    private bool isAlive {get; set;}
+    
+    
+    public void Init(string name)
     {
-        DontDestroyOnLoad(gameObject);
+       this.name = name;
+       this.items = new List<Item>();
+       this.roomsCleared = 0;
+       this.nodesCleared = 0;
+       this.health = Health;
+       this.isAlive = true;
+
     }
 
-    void Update()
+    public static Player CreateInstance(string name)
     {
-        
+       var myPlayer = ScriptableObject.CreateInstance<Player>();
+       myPlayer.Init(name);
+       return myPlayer;
     }
+    
+
+    
     
 
     
