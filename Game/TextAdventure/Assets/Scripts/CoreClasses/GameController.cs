@@ -38,7 +38,7 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("GameControllerAwake");
         //TODO
-        GeneratePlayers("find a way to transfer data from ui");
+        //GeneratePlayers("find a way to transfer data from ui");
         StartGame();
     }
 
@@ -309,30 +309,30 @@ public class GameController : MonoBehaviour
     
 
     //REWORK
-    private Room nextRoom() {
-        int lowest = 100;
-        Room r = null;
-        foreach(Player p in players) {
-            if(p.roomsCleared <= lowest)
-            lowest = p.roomsCleared;
-            r = p.room;
-        }
-        return r;
-    }
+    //private Room nextRoom() {
+    //    int lowest = 100;
+    //    Room r = null;
+    //    foreach(Player p in players) {
+    //        if(p.roomsCleared <= lowest)
+    //        lowest = p.roomsCleared;
+    //        r = p.room;
+    //    }
+    //    return r;
+    //}
 
 
     //REWORK
-    private Player nextPlayerinRoom() {
-        int lowest = 100;
-        Player player = null;
-        foreach(Player p in PlayersInRoom()) {
-            if(p.nodesCleard.<= lowest){
-                lowest = p.nodesCleared;
-                player = p;
-            }
-        }
-        return player;
-    }
+    //private Player nextPlayerinRoom() {
+    //    int lowest = 100;
+    //    Player player = null;
+    //    foreach(Player p in PlayersInRoom()) {
+    //        if(p.nodesCleared.<= lowest){
+    //            lowest = p.nodesCleared;
+    //            player = p;
+    //        }
+    //    }
+    //    return player;
+    //}
     
     #endregion
 
